@@ -1,0 +1,34 @@
+/* Card 1of */
+.css-uf8v1s-MuiPaper-root-MuiCard-root {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Card title */
+.MuiTypography-root.MuiTypography-h5.MuiTypography-gutterBottom.Card-title.css-1eu8cxs-MuiTypography-root {
+    font-family: 'Montserrat', sans-serif;
+    height: 66px;
+}
+
+/* Card subtitle */
+p.MuiTypography-root.MuiTypography-body2.Card-subtitle.css-9fupeq-MuiTypography-root {
+    font-family: 'Montserrat', sans-serif;
+    height: 80px;
+}
+
+/* Card Date*/
+.MuiTypography-root.MuiTypography-inherit.MuiTypography-gutterBottom.Card-date.css-anmq6p-MuiTypography-root {
+    margin: 1px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+    color: #363636;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.6;
+}
+
+.Card-Btn {
+    margin-left: 100px;
+}
+
+.Highlight {
+    background: yellow;
+}

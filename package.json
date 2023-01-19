@@ -2,25 +2,60 @@
   "name": "spa-cards",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.11",
-    "@types/react": "^18.0.26",
-    "@types/react-dom": "^18.0.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.4",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "@manaflair/redux-batch": "1.0.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/jest": "^27.5.2",
+    "@types/loadable__component": "5.13.4",
+    "@types/node": "^16.18.11",
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-router-dom": "5.3.3",
+    "@types/redux-logger": "3.0.9",
+    "@types/uuid": "9.0.0"
+  },
+  "dependencies": {
+    "@emotion/babel-plugin": "11.10.5",
+    "@emotion/css": "11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@loadable/component": "5.15.2",
+    "@mui/material": "^5.11.4",
+    "@mui/icons-material": "5.11.0",
+    "@reduxjs/toolkit": "1.9.1",
+    "axios": "1.2.2",
+    "cross-env": "7.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "8.0.5",
+    "react-router": "6.6.2",
+    "react-router-dom": "6.6.2",
+    "react-scripts": "5.0.1",
+    "redux": "4.2.0",
+    "redux-logger": "3.0.6",
+    "redux-saga": "1.2.2",
+    "typescript": "^4.9.4",
+    "uuid": "8.3.2",
+    "web-vitals": "^2.1.4"
+  },
+  "babel": {
+    "plugins": [
+      "@emotion",
+      {
+        "sourceMap": true,
+        "autoLabel": "dev-only",
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }
+    ]
   },
   "eslintConfig": {
     "extends": [
