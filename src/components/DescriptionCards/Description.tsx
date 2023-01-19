@@ -41,7 +41,9 @@ const Description = () => {
                 {cardDescription.map(({text,cardContent}) => (
                     <>
                         <div className={'Description-image'}>
-                            <CardMedia sx={{maxHeight: 300}}
+                            <CardMedia sx={{
+                                maxHeight: 300
+                            }}
                                        component="img"
                                        height="300"
                                        image={cardContent.image}

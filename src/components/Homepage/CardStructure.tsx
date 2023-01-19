@@ -41,7 +41,11 @@ const CardStructure = ({id, title, image, createdAt, subtitle, searchText}: any)
     }, [searchText])
 
     return (
-        <Card sx={{ maxWidth: 400, maxHeight: 800, boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)'}} className={'Card-info'}
+        <Card sx={{
+            maxWidth: 400,
+            maxHeight: 800,
+            boxShadow: '0 8px 24px rgba(0, 0, 0, 0.15)'
+        }} className={'Card-info'}
               onClick={() =>
             moveToDescription()
         }>
@@ -54,14 +58,32 @@ const CardStructure = ({id, title, image, createdAt, subtitle, searchText}: any)
                     className={'Card-img'}
                 />
                 <CardContent className={'Card-content'}>
-                    <Typography gutterBottom variant="inherit" component="div" className={'Card-date'}>
-                        <CalendarToday sx={{ fontSize: 13.5, paddingRight: 1 }} className={'Card-DateIcon'}/>
+                    <Typography sx={{
+                        margin: 0.5,
+                        paddingBottom: 1.7,
+                        paddingTop: 0.7,
+                        color: '#363636',
+                        opacity: 0.6,
+                        fontFamily: 'Montserrat'
+                    }} gutterBottom variant="inherit" component="div" className={'Card-date'}>
+                        <CalendarToday sx={{
+                            fontSize: 13.5,
+                            paddingRight: 1
+                        }} className={'Card-DateIcon'}/>
                         {date.toDateString()}
                     </Typography>
-                    <Typography sx={{ fontSize: 22 }} gutterBottom variant="h5" component="div" className={'Card-title'}>
+                    <Typography sx={{
+                        fontSize: 22,
+                        fontFamily: 'Montserrat',
+                        height: 66
+                    }} gutterBottom variant="h5" component="div" className={'Card-title'}>
                         {lighter(title)}
                     </Typography>
-                    <Typography sx={{ fontSize: 17 }} variant="body2" color="text.secondary" className={'Card-subtitle'}>
+                    <Typography sx={{
+                        fontSize: 17,
+                        fontFamily: 'Montserrat',
+                        height: 80
+                    }} variant="body2" color="text.secondary" className={'Card-subtitle'}>
                         {lighter(subtitle)}
                     </Typography>
                 </CardContent>

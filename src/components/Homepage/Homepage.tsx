@@ -52,6 +52,10 @@ export default function Homepage() {
                 </div>
                 <form className={'Search-form'}>
                     <TextField
+                        sx={{
+                            height: 35,
+                            width: 600
+                        }}
                         type={'text'}
                         placeholder={'Search...'}
                         className={'Search-input'}
@@ -65,7 +69,14 @@ export default function Homepage() {
             <div>
                 {showResults(searchText)}
             </div>
-            <Container className={"Cards-list"} fixed>
+            <Container sx={{
+                display: 'grid',
+                gridTemplateColumns: 'repeat(3, 400px)',
+                gridGap: '24px',
+                fontFamily: 'Montserrat',
+            }}
+                       className={"Cards-list"}
+                       fixed>
                 {filteredCards(cards).map(({id, title, createdAt, image, subtitle}) => (
                     <CardStructure
                         key={id}
